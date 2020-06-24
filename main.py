@@ -33,7 +33,12 @@ def house():
     if lp == "y":
       print("Length of land is length of house")
       width = int(input("Width of Land Plot: "))
-      lpc = input("Color of Land: ")
+      lpc = input("Color of Land: ")"
+    uw = input("Are there two upstairs sqare windows (y/n): ")
+    if uw == "y":
+      side = int(input("Side Length: "))
+      swd = (length - side - side) / 3
+      dwd = (height - dh - side) / 2
     h.down()
     h.fillcolor(hc)
     h.begin_fill()
